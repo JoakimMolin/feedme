@@ -44,3 +44,13 @@ Protractor-test
 - npm install -g generator-protractor
 - mkdir protractor && cd $_
 - yo protractor
+- ./node_modules/.bin/webdriver-manager start
+- ./node_modules/.bin/protractor protractor.conf.js
+
+
+
+
+Få igång Angular/server på localhost:8000
+- cd ..
+- grunt serve
+- inse att vi ville använda Karma istället för Testem ;)
