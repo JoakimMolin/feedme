@@ -29,9 +29,18 @@ yo angular
 
 
 
-https://github.com/callumlocke/generator-mocha-testem
-npm install -g generator-mocha-testem
-npm install -g bower
-yo mocha-testem
+Enhetstestning test-runner https://github.com/callumlocke/generator-mocha-testem
+- npm install -g generator-mocha-testem
+- npm install -g bower
+- yo mocha-testem
+- testem
 
 *** Test runner som kör noll st tester
+
+
+
+Protractor-test
+- https://github.com/andresdominguez/generator-protractor
+- npm install -g generator-protractor
+- mkdir protractor && cd $_
+- yo protractor
