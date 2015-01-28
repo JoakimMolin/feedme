@@ -38,11 +38,13 @@ fullständig setup för en webapp. Så vi duckar för den och kör vanlig CSS.
 *** Test runner som kör noll st tester
 
 Enhetstestning med Karma
-- grunt watch
+
+- grunt karma
 
 
 
-Protractor-test
+*** Protractor-test - gör helst i nytt terminalfönster
+
 - https://github.com/andresdominguez/generator-protractor
 - npm install -g generator-protractor
 - mkdir protractor && cd $_
@@ -53,6 +55,10 @@ Protractor-test
 
 
 
-Få igång Angular/server på localhost:8000
+*** Få igång Angular/server på localhost:8000
+
+`grunt serve` bygger om appen *och* kör alla enhetstester så snart man sparar en fil.
+
 - cd ..
 - grunt serve
+- Ändra ett av scaffold-testerna så det fallerar. Visa output i terminalen.
