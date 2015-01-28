@@ -4,7 +4,7 @@ FEEDME
 Koncept: Slumpa ett förslag på lunchställe (begränsa radie)
 
 Steg 1: Statisk JSON
-Steg 2: Foursquare API (https://developer.foursquare.com, antagligen bättre anpassat än google places) 
+Steg 2: Foursquare API (https://developer.foursquare.com, antagligen bättre anpassat än google places)
 
 Scaffolding:
 - Lineman med Angular template: https://github.com/linemanjs/lineman-angular-template
@@ -25,17 +25,20 @@ npm install -g generator-angular
 
 yo angular
 
-*** Bootstrap, Sass, Angular-moduler
+- Would you like to use Sass (with Compass)? **No**
+- Would you like to include Bootstrap? **Yes**
+- Which modules would you like to include? **[default]**
+
+Sass är trevligt och något vi gärna använder, men Compass kräver att man har
+Ruby-beroenden installerade. Poängen här är att bygga med TDD - inte att visa
+fullständig setup för en webapp. Så vi duckar för den och kör vanlig CSS.
 
 
-
-Enhetstestning test-runner https://github.com/callumlocke/generator-mocha-testem
-- npm install -g generator-mocha-testem
-- npm install -g bower
-- yo mocha-testem
-- testem
 
 *** Test runner som kör noll st tester
+
+Enhetstestning med Karma
+- grunt watch
 
 
 
@@ -53,4 +56,3 @@ Protractor-test
 Få igång Angular/server på localhost:8000
 - cd ..
 - grunt serve
-- inse att vi ville använda Karma istället för Testem ;)
