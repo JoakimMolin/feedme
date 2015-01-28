@@ -35,6 +35,14 @@ fullständig setup för en webapp. Så vi duckar för den och kör vanlig CSS.
 
 
 
+*** Om du inte har bower sen tidigare, och klonat repot istället för att följa
+dessa instruktioner i ett nytt projekt, installera bower:
+
+npm install -g bower
+bower install
+
+
+
 *** Test runner som kör noll st tester
 
 Enhetstestning med Karma
@@ -62,3 +70,22 @@ Enhetstestning med Karma
 - cd ..
 - grunt serve
 - Ändra ett av scaffold-testerna så det fallerar. Visa output i terminalen.
+
+
+
+Statisk testdata, vi hämtar json via manuellt API-anrop.
+
+Vårt första test: Vi vill ha ett lunchställe i en vy, t.ex. i en h2:a (slumpmässigt utvald)
+Controller för att hämta data.
+Protractor-test!
+Utgå från example-spec
+Till att börja med så väljer vi konsekvent den första i listan
+När vi har ett test som failar så har vi en bra anledning att skriva markup och kod
+Istället för att hårdkoda namnet i vyn så använder vi en angular-template
+Innan vi implementerar vår modell och kontroller så vill vi ha enhetstester!
+Rensa ut scaffolding från main controller och skriv om testerna som genererades till projektet
+
+
+
+Watch kör inte testerna vid ändring i controller, endast vid ändring i testet
+Löser detta genom att ändra files-path för jsTest i Gruntfiles.js
