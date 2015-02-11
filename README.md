@@ -97,3 +97,36 @@ Löser detta genom att ändra files-path för jsTest i Gruntfiles.js
 - Lägg in en connect-middleware som knyter '/places' till 'test/fixtures' (i både `test` och `livereload`)
 - snippet: `connect().use('/places', connect.static('test/fixtures'))`
 - Starta om servern och se att localhost:9000/places/nearby.json ger JSON-data
+
+
+*** Testa mot servad JSON-data
+
+- Testdriv MainCtrl till att mocka ut $httpBackend.
+
+```
+// beforeEach()
+$httpBackend = $injector.get('$httpBackend');
+
+// mocked response:
+{
+  response: {
+    groups: [ {
+      items: [ {
+        venue: { name: 'Lounge Lizards' }
+      } ]
+    } ]
+  }
+}
+```
+
+- Viktigt: testa att anropet faktiskt utfördes! Demas enklast genom att försöka hårdkoda :)
+
+```
+afterEach(function() {
+  $httpBackend.verifyNoOutstandingExpectation();
+  $httpBackend.verifyNoOutstandingRequest();
+});
+```
+
+- När controller-testet är grönt, validera med Protractor. Är Protractor grön:
+  ladda om sidan för att visa att det fungerar på riktigt också.
