@@ -1,22 +1,38 @@
 'use strict';
 
 describe('Controller: MainCtrl', function () {
-
   // load the controller's module
   beforeEach(module('feedmeApp'));
 
   var MainCtrl,
-    scope;
+    scope,
+    $httpBackend;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($injector, $controller, $rootScope) {
+    $httpBackend = $injector.get('$httpBackend');
     scope = $rootScope.$new();
     MainCtrl = $controller('MainCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  afterEach(function() {
+    $httpBackend.verifyNoOutstandingExpectation();
+    $httpBackend.verifyNoOutstandingRequest();
+  });
+
+  it('fetches a list of venues and exposes the first one found', function () {
+    $httpBackend.expectGET('/places/nearby.json').respond({
+      response: {
+        groups: [ {
+          items: [ {
+            venue: { name: 'Lounge Lizards' }
+          } ]
+        } ]
+      }
+    });
+    $httpBackend.flush();
+    expect(scope.venue.name).toEqual('Lounge Lizards');
   });
 });

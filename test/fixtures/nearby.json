@@ -1,0 +1,369 @@
+{
+   "meta" : {
+      "code" : 200
+   },
+   "response" : {
+      "suggestedBounds" : {
+         "sw" : {
+            "lng" : 18.0409760943108,
+            "lat" : 59.3233439955
+         },
+         "ne" : {
+            "lat" : 59.3323440045,
+            "lng" : 18.0585859056892
+         }
+      },
+      "query" : "lunch",
+      "suggestedFilters" : {
+         "filters" : [
+            {
+               "key" : "openNow",
+               "name" : "Open now"
+            }
+         ],
+         "header" : "Tap to show:"
+      },
+      "headerLocationGranularity" : "neighborhood",
+      "groups" : [
+         {
+            "items" : [
+               {
+                  "referralId" : "e-0-4bcec41068f976b093836683-0",
+                  "reasons" : {
+                     "count" : 0,
+                     "items" : [
+                        {
+                           "type" : "general",
+                           "summary" : "This spot is popular",
+                           "reasonName" : "globalInteractionReason"
+                        }
+                     ]
+                  },
+                  "venue" : {
+                     "stats" : {
+                        "checkinsCount" : 136,
+                        "usersCount" : 42,
+                        "tipCount" : 0
+                     },
+                     "featuredPhotos" : {
+                        "items" : [
+                           {
+                              "visibility" : "public",
+                              "height" : 720,
+                              "prefix" : "https://irs1.4sqi.net/img/general/",
+                              "createdAt" : 1403866937,
+                              "id" : "53ad4f39498ee7076b2ac770",
+                              "user" : {
+                                 "firstName" : "Sari",
+                                 "photo" : {
+                                    "prefix" : "https://irs1.4sqi.net/img/user/",
+                                    "suffix" : "/UOZ0UGNKAASPM32X.jpg"
+                                 },
+                                 "id" : "62351758",
+                                 "lastName" : "Mattila",
+                                 "gender" : "female"
+                              },
+                              "suffix" : "/62351758_HADsc12MHDmVeoli3CDodwjQoZ1Qj8xchhXSgtiOX9o.jpg",
+                              "width" : 960
+                           }
+                        ],
+                        "count" : 1
+                     },
+                     "location" : {
+                        "formattedAddress" : [
+                           "Hantverkargatan 7",
+                           "112 21 Stockholm",
+                           "Sverige"
+                        ],
+                        "city" : "Stockholm",
+                        "cc" : "SE",
+                        "lng" : 18.04902,
+                        "address" : "Hantverkargatan 5",
+                        "country" : "Sverige",
+                        "postalCode" : "112 21",
+                        "state" : "Storstockholm",
+                        "lat" : 59.328334,
+                        "distance" : 69
+                     },
+                     "specials" : {
+                        "count" : 0,
+                        "items" : []
+                     },
+                     "categories" : [
+                        {
+                           "id" : "4bf58dd8d48988d111941735",
+                           "icon" : {
+                              "prefix" : "https://ss3.4sqi.net/img/categories_v2/food/japanese_",
+                              "suffix" : ".png"
+                           },
+                           "shortName" : "Japanese",
+                           "name" : "Japanese Restaurant",
+                           "pluralName" : "Japanese Restaurants",
+                           "primary" : true
+                        }
+                     ],
+                     "photos" : {
+                        "groups" : [
+                           {
+                              "count" : 1,
+                              "name" : "Venue photos",
+                              "items" : [
+                                 {
+                                    "createdAt" : 1403866937,
+                                    "prefix" : "https://irs1.4sqi.net/img/general/",
+                                    "height" : 720,
+                                    "visibility" : "public",
+                                    "width" : 960,
+                                    "suffix" : "/62351758_HADsc12MHDmVeoli3CDodwjQoZ1Qj8xchhXSgtiOX9o.jpg",
+                                    "id" : "53ad4f39498ee7076b2ac770",
+                                    "user" : {
+                                       "gender" : "female",
+                                       "lastName" : "Mattila",
+                                       "photo" : {
+                                          "prefix" : "https://irs1.4sqi.net/img/user/",
+                                          "suffix" : "/UOZ0UGNKAASPM32X.jpg"
+                                       },
+                                       "firstName" : "Sari",
+                                       "id" : "62351758"
+                                    }
+                                 }
+                              ],
+                              "type" : "venue"
+                           }
+                        ],
+                        "count" : 1
+                     },
+                     "contact" : {},
+                     "price" : {
+                        "tier" : 2,
+                        "currency" : "$",
+                        "message" : "Moderate"
+                     },
+                     "hereNow" : {
+                        "count" : 0,
+                        "groups" : [],
+                        "summary" : "Nobody here"
+                     },
+                     "name" : "Loungen",
+                     "verified" : false,
+                     "id" : "4bcec41068f976b093836683"
+                  },
+                  "snippets" : {
+                     "count" : 1,
+                     "items" : [
+                        {
+                           "detail" : {
+                              "object" : {
+                                 "count" : 1,
+                                 "items" : [
+                                    {
+                                       "tag" : "Good for Lunch"
+                                    }
+                                 ],
+                                 "summary" : "Matches: Good for Lunch"
+                              },
+                              "type" : "venuetag"
+                           }
+                        }
+                     ]
+                  }
+               },
+               {
+                  "snippets" : {
+                     "items" : [
+                        {
+                           "detail" : {
+                              "type" : "venuetag",
+                              "object" : {
+                                 "items" : [
+                                    {
+                                       "tag" : "Good for Lunch"
+                                    }
+                                 ],
+                                 "summary" : "Matches: Good for Lunch",
+                                 "count" : 1
+                              }
+                           }
+                        }
+                     ],
+                     "count" : 1
+                  },
+                  "tips" : [
+                     {
+                        "createdAt" : 1341838996,
+                        "text" : "Free wifi, no password necessary.",
+                        "type" : "user",
+                        "todo" : {
+                           "count" : 0
+                        },
+                        "logView" : true,
+                        "canonicalUrl" : "https://foursquare.com/item/4ffad694e4b048eef9526ea3",
+                        "user" : {
+                           "lastName" : "📎",
+                           "gender" : "none",
+                           "id" : "51183",
+                           "firstName" : "trumper",
+                           "photo" : {
+                              "suffix" : "/TNJENHST51W4O2YG.jpg",
+                              "prefix" : "https://irs3.4sqi.net/img/user/"
+                           }
+                        },
+                        "id" : "4ffad694e4b048eef9526ea3"
+                     }
+                  ],
+                  "referralId" : "e-0-4c84b04ed8086dcb5c5a8b52-1",
+                  "venue" : {
+                     "verified" : false,
+                     "id" : "4c84b04ed8086dcb5c5a8b52",
+                     "hereNow" : {
+                        "count" : 0,
+                        "summary" : "Nobody here",
+                        "groups" : []
+                     },
+                     "hours" : {
+                        "status" : "Open until 5:00 PM",
+                        "isOpen" : true
+                     },
+                     "name" : "Matlåda i köket",
+                     "contact" : {
+                        "formattedPhone" : "+46 8 651 53 53",
+                        "phone" : "+4686515353"
+                     },
+                     "price" : {
+                        "message" : "Cheap",
+                        "tier" : 1,
+                        "currency" : "$"
+                     },
+                     "featuredPhotos" : {
+                        "items" : [
+                           {
+                              "suffix" : "/DOa4vaxjBL1vdEWNO0Cgw9i1c4BlT13CYjqV8eZzDLI.jpg",
+                              "width" : 720,
+                              "user" : {
+                                 "lastName" : "Valentin",
+                                 "gender" : "male",
+                                 "firstName" : "Ted",
+                                 "photo" : {
+                                    "prefix" : "https://irs3.4sqi.net/img/user/",
+                                    "suffix" : "/RO5KYPQEITBKDXTB.jpg"
+                                 },
+                                 "id" : "96168"
+                              },
+                              "id" : "4f608384e4b0ae6370d7d667",
+                              "height" : 540,
+                              "prefix" : "https://irs0.4sqi.net/img/general/",
+                              "createdAt" : 1331725188,
+                              "visibility" : "public"
+                           }
+                        ],
+                        "count" : 1
+                     },
+                     "stats" : {
+                        "usersCount" : 57,
+                        "tipCount" : 1,
+                        "checkinsCount" : 284
+                     },
+                     "photos" : {
+                        "groups" : [
+                           {
+                              "items" : [
+                                 {
+                                    "id" : "4f608384e4b0ae6370d7d667",
+                                    "user" : {
+                                       "firstName" : "Ted",
+                                       "photo" : {
+                                          "prefix" : "https://irs3.4sqi.net/img/user/",
+                                          "suffix" : "/RO5KYPQEITBKDXTB.jpg"
+                                       },
+                                       "id" : "96168",
+                                       "lastName" : "Valentin",
+                                       "gender" : "male"
+                                    },
+                                    "suffix" : "/DOa4vaxjBL1vdEWNO0Cgw9i1c4BlT13CYjqV8eZzDLI.jpg",
+                                    "width" : 720,
+                                    "visibility" : "public",
+                                    "height" : 540,
+                                    "createdAt" : 1331725188,
+                                    "prefix" : "https://irs0.4sqi.net/img/general/"
+                                 }
+                              ],
+                              "type" : "venue",
+                              "name" : "Venue photos",
+                              "count" : 6
+                           }
+                        ],
+                        "count" : 6
+                     },
+                     "categories" : [
+                        {
+                           "pluralName" : "Sandwich Places",
+                           "primary" : true,
+                           "name" : "Sandwich Place",
+                           "icon" : {
+                              "prefix" : "https://ss3.4sqi.net/img/categories_v2/food/deli_",
+                              "suffix" : ".png"
+                           },
+                           "shortName" : "Sandwiches",
+                           "id" : "4bf58dd8d48988d1c5941735"
+                        }
+                     ],
+                     "specials" : {
+                        "items" : [],
+                        "count" : 0
+                     },
+                     "location" : {
+                        "address" : "Parmmätargatan 5",
+                        "crossStreet" : "Hantverkargatan",
+                        "lng" : 18.047028,
+                        "cc" : "SE",
+                        "formattedAddress" : [
+                           "Parmmätargatan 5 (Hantverkargatan)",
+                           "112 24 Stockholm",
+                           "Sverige"
+                        ],
+                        "city" : "Stockholm",
+                        "state" : "Storstockholm",
+                        "postalCode" : "112 24",
+                        "distance" : 170,
+                        "lat" : 59.328446,
+                        "country" : "Sverige"
+                     }
+                  },
+                  "reasons" : {
+                     "count" : 0,
+                     "items" : [
+                        {
+                           "type" : "general",
+                           "summary" : "This spot is popular",
+                           "reasonName" : "globalInteractionReason"
+                        }
+                     ]
+                  }
+               }
+            ],
+            "type" : "Recommended Places",
+            "name" : "recommended"
+         }
+      ],
+      "headerLocation" : "Kungsholm",
+      "headerFullLocation" : "Kungsholm, Stockholm",
+      "fallbackCategory" : {
+         "refinements" : [
+            {
+               "query" : "coffee shop"
+            }
+         ],
+         "target" : {
+            "params" : {
+               "ll" : "59.327844,18.049781",
+               "query" : "lunch",
+               "sortByDistance" : "1",
+               "radius" : "500"
+            },
+            "type" : "path",
+            "url" : "/venue/explore"
+         }
+      },
+      "totalResults" : 45
+   }
+}
