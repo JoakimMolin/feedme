@@ -89,3 +89,11 @@ Rensa ut scaffolding från main controller och skriv om testerna som genererades
 
 Watch kör inte testerna vid ändring i controller, endast vid ändring i testet
 Löser detta genom att ändra files-path för jsTest i Gruntfiles.js
+
+
+*** Serva statisk JSON-data lokalt
+
+- Lägg in statisk JSON-fil i test/fixtures/nearby.json
+- Lägg in en connect-middleware som knyter '/places' till 'test/fixtures' (i både `test` och `livereload`)
+- snippet: `connect().use('/places', connect.static('test/fixtures'))`
+- Starta om servern och se att localhost:9000/places/nearby.json ger JSON-data

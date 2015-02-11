@@ -81,7 +81,8 @@ module.exports = function (grunt) {
                 '/bower_components',
                 connect.static('./bower_components')
               ),
-              connect.static(appConfig.app)
+              connect.static(appConfig.app),
+              connect().use('/places', connect.static('test/fixtures'))
             ];
           }
         }
@@ -97,7 +98,8 @@ module.exports = function (grunt) {
                 '/bower_components',
                 connect.static('./bower_components')
               ),
-              connect.static(appConfig.app)
+              connect.static(appConfig.app),
+              connect().use('/places', connect.static('test/fixtures'))
             ];
           }
         }
