@@ -22,17 +22,22 @@ describe('Controller: MainCtrl', function () {
     $httpBackend.verifyNoOutstandingRequest();
   });
 
-  it('fetches a list of venues and exposes the first one found', function () {
+  it('fetches a list of venues and exposes one of them randomly', function () {
+    spyOn(Math, 'random').and.returnValue(0.99);
     $httpBackend.expectGET('/places/nearby.json').respond({
       response: {
         groups: [ {
-          items: [ {
+          items: [
+          {
             venue: { name: 'Lounge Lizards' }
-          } ]
+          },
+          {
+            venue: { name: 'Kitchen Kittens' }
+          }]
         } ]
       }
     });
     $httpBackend.flush();
-    expect(scope.venue.name).toEqual('Lounge Lizards');
+    expect(scope.venue.name).toEqual('Kitchen Kittens');
   });
 });

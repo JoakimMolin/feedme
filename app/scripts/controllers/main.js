@@ -10,6 +10,8 @@
 angular.module('feedmeApp')
   .controller('MainCtrl', function ($scope, $http) {
     $http.get('/places/nearby.json').success(function(json) {
-      $scope.venue = json.response.groups[0].items[0].venue;
+      var group = json.response.groups[0];
+      var itemIndex = Math.floor(Math.random() * group.items.length);
+      $scope.venue = group.items[itemIndex].venue;
     });
   });
