@@ -8,6 +8,23 @@ describe('Controller: MainCtrl', function () {
     scope,
     $httpBackend;
 
+  function respondWithStub() {
+    $httpBackend.expectGET('/places/nearby.json').respond({
+      response: {
+        groups: [ {
+          items: [
+          {
+            venue: { name: 'Lounge Lizards' }
+          },
+          {
+            venue: { name: 'Kitchen Kittens' }
+          }]
+        } ]
+      }
+    });
+    $httpBackend.flush();
+  }
+
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($injector, $controller, $rootScope) {
     $httpBackend = $injector.get('$httpBackend');
@@ -24,20 +41,9 @@ describe('Controller: MainCtrl', function () {
 
   it('fetches a list of venues and exposes one of them randomly', function () {
     spyOn(Math, 'random').and.returnValue(0.99);
-    $httpBackend.expectGET('/places/nearby.json').respond({
-      response: {
-        groups: [ {
-          items: [
-          {
-            venue: { name: 'Lounge Lizards' }
-          },
-          {
-            venue: { name: 'Kitchen Kittens' }
-          }]
-        } ]
-      }
-    });
-    $httpBackend.flush();
+
+    respondWithStub();
+
     expect(scope.venue.name).toEqual('Kitchen Kittens');
   });
 });
