@@ -46,4 +46,12 @@ describe('Controller: MainCtrl', function () {
 
     expect(scope.venue.name).toEqual('Kitchen Kittens');
   });
+
+  it('fetches a list of venues and exposes one of them randomly', function () {
+    spyOn(Math, 'random').and.returnValue(0.01);
+
+    respondWithStub();
+
+    expect(scope.venue.name).toEqual('Lounge Lizards');
+  });
 });
