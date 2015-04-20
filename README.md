@@ -130,3 +130,10 @@ afterEach(function() {
 
 - När controller-testet är grönt, validera med Protractor. Är Protractor grön:
   ladda om sidan för att visa att det fungerar på riktigt också.
+
+## Bonusuppgifter
+
+* Skriv Protractor-tester för Home och Contacts. (Med den version vi utvecklat
+  här så visas inte Home när man följer länken - write a test, make it work
+* Lägg in en knapp för att slumpa fram ett nytt ställe. Slumpa fram en
+  restaurang som *inte* är samma som innan!
