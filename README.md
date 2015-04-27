@@ -17,7 +17,7 @@ Testning:
 
 
 
-npm install -g generator-angular
+npm install -g grunt-cli bower yo generator-karma generator-angular
 
 *** Prata om Lineman och Yeoman, vad Yeoman används till (scaffolding, automatiserad uppsättning)
 
